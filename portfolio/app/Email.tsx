@@ -5,3 +5,5 @@ const Email = () => {
         </div>
     )
 }
+
+export default Email

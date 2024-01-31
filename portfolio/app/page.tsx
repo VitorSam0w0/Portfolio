@@ -11,7 +11,7 @@ export default function Home() {
         </div>
         <div className="text-end">
           <Link className="px-11" href="/Projetos">+Projetos</Link>
-          <Link className="px-11" href="/Email">E-mail</Link>
+          <Link className="px-11 rounded-full border-gray-950 " href="/Email"></Link>
         </div>
       </div>
     </main>

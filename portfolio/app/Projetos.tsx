@@ -5,3 +5,5 @@ const Projetos = () => {
         </div>
     )
 }
+
+export default Projetos
