@@ -4,14 +4,17 @@ import Logo from "./img/logo.png"
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="container mx-auto px-18">
-        <ul className="flex item-center">
-          <li className="w-20 h-20 mx-11"><Image src={Logo} alt="Imagem logo"></Image></li>
-          <li className="mx-11 aligh-middle"><Link href="/Projetos">+Projetos</Link></li> 
-          <li className="mx-11 aligh-middle"><Link href="/Email">E-mail</Link></li>
-        </ul>
+    <main className="flex items-center justify-between p-24">
+      <div className="flex items-center">
+        <div>
+          <Image className="w-20 h-20" src={Logo} alt="Imagem logo"></Image>
+        </div>
+        <div className="text-end">
+          <Link className="px-11" href="/Projetos">+Projetos</Link>
+          <Link className="px-11" href="/Email">E-mail</Link>
+        </div>
       </div>
     </main>
   );
 }
+
