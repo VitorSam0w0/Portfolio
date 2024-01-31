@@ -1,7 +1,10 @@
+import React from "react"
+
 const Email = () => {
     return (
         <div>
-            <input type="text" />
+            <h1>teste</h1>
+            <p>teste 3</p>
         </div>
     )
 }
