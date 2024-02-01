@@ -1,26 +1,39 @@
+// pages/index.js
+
 import Image from "next/image";
 import Link from "next/link";
-import Logo from "./img/logo.png"
+import Logo from "./img/logo.png";
 
 export default function Home() {
   return (
-    <main className="flex items-center justify-between p-24 text-gray-500 text-2xl">
-      <div className="flex items-center">
-        <div>
-          <Image className="w-20 h-20" src={Logo} alt="Imagem logo"></Image>
+    <div className="min-h-screen flex flex-col bg-gray-100">
+      {/* Navbar */}
+      <nav className="bg-gray-600 p-4 text-white">
+        <div className="flex items-center justify-between">
+          <div>
+            <Image className="w-20 h-20" src={Logo} alt="Imagem logo" />
+          </div>
+          <div className="hidden md:flex space-x-4">
+            <Link href="/Projetos" className="hover:text-gray-300">+Projetos</Link>
+            <Link href="/Email" className="hover:text-gray-300">Email</Link>  
+            {/* Adicione mais links conforme necessário */}
+          </div>
         </div>
-        <div>
-          <ul className="flex justify-end">
-            <li className="hover:text-black">
-              <Link className="px-11" href="/Projetos">+Projetos</Link>
-            </li>
-            <li className="transform hover:scale-110 ease-in duration-300 hover:ease-in">
-              <Link className="px-11 rounded-full border-gray-950 border-2 hover:bg-black hover:text-white " href="/Email">Email</Link>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </main>
+      </nav>
+
+      {/* Conteúdo */}
+      <main className="flex-1 p-8">
+        <h1 className="text-4xl font-bold mb-4">Bem-vindo ao Meu Site</h1>
+        <p className="text-lg">
+          Este é um exemplo básico de um corpo de site usando Next.js e Tailwind CSS. 
+          Sinta-se à vontade para adicionar mais conteúdo aqui.
+        </p>
+      </main>
+
+      {/* Rodapé */}
+      <footer className="bg-gray-800 text-white p-4 text-center">
+        © 2024 Portfolio de Vitor Dias
+      </footer>
+    </div>
   );
 }
-
