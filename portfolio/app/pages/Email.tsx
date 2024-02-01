@@ -1,5 +1,5 @@
 // pages/Email.js
-
+import '../globals.css'
 import Link from "next/link";
 
 export default function Email() {
@@ -7,7 +7,7 @@ export default function Email() {
     <div className="min-h-screen flex flex-col bg-gray-100">
       {/* Navbar (pode ser extraído para um componente reutilizável) */}
       <nav className="bg-gray-800 p-4 text-white">
-        <div className="flex items-center justify-between">
+        <div className="flex justify-between">
           <div>
             <Link href="/" className="hover:text-gray-300">Home</Link>
           </div>

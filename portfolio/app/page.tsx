@@ -8,8 +8,8 @@ export default function Home() {
   return (
     <div className="min-h-screen flex flex-col bg-gray-100">
       {/* Navbar */}
-      <nav className="bg-gray-600 p-4 text-white">
-        <div className="flex items-center justify-between">
+      <nav className="bg-gray-600 p-4 text-white text-center sm:text-left">
+        <div className="flex justify-between">
           <div>
             <Image className="w-20 h-20" src={Logo} alt="Imagem logo" />
           </div>
