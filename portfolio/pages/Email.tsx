@@ -1,36 +1,40 @@
-// pages/Email.js
+// pages/index.js
 
+import Image from "next/image";
 import Link from "next/link";
-import React from "react";
+import Logo from "../img/logo.png";
+import '../app/globals.css'
 
 export default function Email() {
   return (
     <div className="min-h-screen flex flex-col bg-gray-100">
-      {/* Navbar (pode ser extraído para um componente reutilizável) */}
-      <nav className="bg-gray-800 p-4 text-white">
-        <div className="flex items-center justify-between">
+      {/* Navbar */}
+      <nav className="bg-gray-600 p-4 text-white text-center sm:text-left">
+        <div className="flex justify-between">
           <div>
-            <Link href="/" className="hover:text-gray-300">Home</Link>
+            <Image className="w-20 h-20" src={Logo} alt="Imagem logo" />
           </div>
-          <div className="hidden md:flex space-x-4">
-            <Link href="/Projetos" className="hover:text-gray-300">Projetos</Link>
-            <span className="text-gray-300">Email</span>
+          <div className="hidden md:flex space-x-4 pt-10">
+            <Link href="/" className="hover:text-gray-300" legacyBehavior><a>Inicio</a></Link>
+            <Link href="/Projetos" className="hover:text-gray-300" legacyBehavior><a>+Projetos</a></Link>
+            <Link href="/Email" className="hover:text-gray-300" legacyBehavior><a>Email</a></Link>
             {/* Adicione mais links conforme necessário */}
           </div>
         </div>
       </nav>
 
-      {/* Conteúdo da página Email */}
+      {/* Conteúdo */}
       <main className="flex-1 p-8">
-        <h1 className="text-4xl font-bold mb-4">Entre em Contato</h1>
+        <h1 className="text-4xl font-bold mb-4">Bem-vindo ao Meu Site</h1>
         <p className="text-lg">
-          Informações de contato e formulário de email vão aqui...
+          Este é um exemplo básico de um corpo de site usando Next.js e Tailwind CSS. 
+          Sinta-se à vontade para adicionar mais conteúdo aqui.
         </p>
       </main>
 
       {/* Rodapé */}
       <footer className="bg-gray-800 text-white p-4 text-center">
-        © 2024 Meu Site
+        © 2024 Portfolio de Vitor Dias
       </footer>
     </div>
   );

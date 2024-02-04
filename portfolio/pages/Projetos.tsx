@@ -3,8 +3,9 @@
 import Image from "next/image";
 import Link from "next/link";
 import Logo from "../img/logo.png";
+import '../app/globals.css'
 
-export default function Home() {
+export default function Projetos() {
   return (
     <div className="min-h-screen flex flex-col bg-gray-100">
       {/* Navbar */}
@@ -14,7 +15,7 @@ export default function Home() {
             <Image className="w-20 h-20" src={Logo} alt="Imagem logo" />
           </div>
           <div className="hidden md:flex space-x-4 pt-10">
-           <Link href="/" className="hover:text-gray-300" legacyBehavior><a>Inicio</a></Link>
+            <Link href="/" className="hover:text-gray-300" legacyBehavior><a>Inicio</a></Link>
             <Link href="/Projetos" className="hover:text-gray-300" legacyBehavior><a>+Projetos</a></Link>
             <Link href="/Email" className="hover:text-gray-300" legacyBehavior><a>Email</a></Link>
             {/* Adicione mais links conforme necessário */}
