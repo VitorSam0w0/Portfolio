@@ -15,9 +15,18 @@ export default function Projetos() {
             <Image className="w-16 h-16 md:w-20 md:h-20" src={Logo} alt="Imagem logo" />
           </div>
           <div className="flex space-x-4 pt-3 pb-3 min-[320px]:text-center">
-            <Link href="/" legacyBehavior><a className="hover:text-gray-300">Inicio</a></Link>
-            <Link href="/Projetos" legacyBehavior><a className="hover:text-gray-300">+Projetos</a></Link>
-            <Link href="/Email" legacyBehavior><a className="hover:text-gray-300">Email</a></Link>
+          <ul className="flex items-center">
+             <li className="p-4">
+               <Link href="/" legacyBehavior><a className="hover:text-gray-300">Inicio</a></Link>
+             </li>
+              <li className="p-4">
+                <Link href="/Projetos" legacyBehavior><a className="hover:text-gray-300">+Projetos</a></Link>
+              </li>
+              <li className="p-4">
+                <Link href="/Email" legacyBehavior><a className="hover:text-gray-300">Email</a></Link>
+              </li>
+              {/* Adicione mais links conforme necessário */}
+           </ul>
             {/* Adicione mais links conforme necessário */}
           </div>
         </div>
