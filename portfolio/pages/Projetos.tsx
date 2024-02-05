@@ -7,22 +7,21 @@ import '../app/globals.css'
 
 export default function Projetos() {
   return (
-    <div className="min-h-screen flex flex-col bg-gray-100">
+    <div className="min-h-screen flex flex-col bg-gray-100 font-mono">
       {/* Navbar */}
-      <nav className="bg-gray-600 p-4 text-white text-center sm:text-left">
-        <div className="flex justify-between">
+      <nav className="bg-gray-600 p-4 text-white text-center rounded-b-2xl">
+        <div className="flex flex-col justify-between sm:flex-row justify-between items-center">
           <div>
-            <Image className="w-20 h-20" src={Logo} alt="Imagem logo" />
+            <Image className="w-16 h-16 md:w-20 md:h-20" src={Logo} alt="Imagem logo" />
           </div>
-          <div className="hidden md:flex space-x-4 pt-10git ">
-            <Link href="/" className="hover:text-gray-300" legacyBehavior><a>Inicio</a></Link>
-            <Link href="/Projetos" className="hover:text-gray-300" legacyBehavior><a>+Projetos</a></Link>
-            <Link href="/Email" className="hover:text-gray-300" legacyBehavior><a>Email</a></Link>
+          <div className="flex space-x-4 pt-3 pb-3 min-[320px]:text-center">
+            <Link href="/" legacyBehavior><a className="hover:text-gray-300">Inicio</a></Link>
+            <Link href="/Projetos" legacyBehavior><a className="hover:text-gray-300">+Projetos</a></Link>
+            <Link href="/Email" legacyBehavior><a className="hover:text-gray-300">Email</a></Link>
             {/* Adicione mais links conforme necessário */}
           </div>
         </div>
       </nav>
-
       {/* Conteúdo */}
       <main className="flex-1 p-8">
         <h1 className="text-4xl font-bold mb-4">Bem-vindo ao Meu Site</h1>
