@@ -14,7 +14,7 @@ export default function Projetos() {
           <div>
             <Image className="w-20 h-20" src={Logo} alt="Imagem logo" />
           </div>
-          <div className="hidden md:flex space-x-4 pt-10">
+          <div className="hidden md:flex space-x-4 pt-10git ">
             <Link href="/" className="hover:text-gray-300" legacyBehavior><a>Inicio</a></Link>
             <Link href="/Projetos" className="hover:text-gray-300" legacyBehavior><a>+Projetos</a></Link>
             <Link href="/Email" className="hover:text-gray-300" legacyBehavior><a>Email</a></Link>
