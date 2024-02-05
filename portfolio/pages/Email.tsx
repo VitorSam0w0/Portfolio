@@ -3,7 +3,7 @@
 import "../app/globals.css"
 import NavBar from "./NavBar"
 
-export default function Email() {
+const Email = () => {
   return (
     <div className="min-h-screen flex flex-col bg-gray-100 font-mono ">
       <NavBar/>
@@ -16,3 +16,5 @@ export default function Email() {
     </div>
   );
 }
+
+export default Email

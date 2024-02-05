@@ -1,7 +1,7 @@
 import "../app/globals.css"
 import NavBar from "./NavBar";
 
-export default function Projetos() {
+const Projetos = () => {
   return (
     <div className="min-h-screen flex flex-col bg-gray-100 font-mono ">
       <NavBar/>
@@ -14,3 +14,5 @@ export default function Projetos() {
     </div>
   );
 }
+
+export default Projetos
