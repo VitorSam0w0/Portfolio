@@ -15,14 +15,14 @@ export default function Home() {
           </div>
           <div className="flex space-x-4 pt-3 pb-3 min-[320px]:text-center">
            <ul className="flex items-center">
-             <li className="p-4">
-               <Link href="/" legacyBehavior><a className="hover:text-gray-300">Inicio</a></Link>
+             <li className="pl-5 pr-5 rounded-md hover:transition duration-700 ease-in-out hover:rounded-2xl hover:border hover:border-white">
+               <Link href="/" legacyBehavior><a className="hover:transition duration-700 ease-in-out hover:text-gray-300">Inicio</a></Link>
              </li>
-              <li className="p-4">
-                <Link href="/Projetos" legacyBehavior><a className="hover:text-gray-300">+Projetos</a></Link>
+              <li className="pl-5 pr-5 rounded-md hover:transition duration-700 ease-in-out hover:rounded-2xl hover:border hover:border-white">
+                <Link href="/Projetos" legacyBehavior><a className="hover:transition duration-700 ease-in-out hover:text-gray-300">+Projetos</a></Link>
               </li>
-              <li className="p-4">
-                <Link href="/Email" legacyBehavior><a className="hover:text-gray-300">Email</a></Link>
+              <li className="pl-5 pr-5 rounded-md hover:transition duration-700 ease-in-out hover:rounded-2xl hover:border hover:border-white">
+                <Link href="/Email" legacyBehavior><a className="hover:transition duration-700 ease-in-out hover:text-gray-300">Email</a></Link>
               </li>
               {/* Adicione mais links conforme necessário */}
            </ul>
