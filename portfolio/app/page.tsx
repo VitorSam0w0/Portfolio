@@ -30,9 +30,9 @@ const Home = () => {
           </div>
         </div>
       </main>
-      <footer className="bg-gray-800 text-white p-4 text-center">
+      <div className="bg-gray-800 text-white p-4 text-center">
         © 2024 Portfolio de Vitor Dias
-      </footer>
+      </div>
     </div>
   );
 }
