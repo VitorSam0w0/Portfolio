@@ -19,9 +19,6 @@ const NavBar = () => {
               <li className="pl-5 pr-5 rounded-2xl hover:transition duration-700 ease-in-out hover:rounded-2xl hover:border hover:border-white">
                 <Link href="/Projetos" legacyBehavior><a className="hover:transition duration-700 ease-in-out hover:text-gray-300">+Projetos</a></Link>
               </li>
-              <li className="pl-5 pr-5 rounded-md hover:transition duration-700 ease-in-out hover:rounded-2xl hover:border hover:border-white">
-                <Link href="/Email" legacyBehavior><a className="hover:transition duration-700 ease-in-out hover:text-gray-300">Email</a></Link>
-              </li>
            </ul>
           </div>
         </div>
